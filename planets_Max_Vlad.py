@@ -1,0 +1,141 @@
+import turtle
+
+# def get_mouse_click_coor(x, y):
+#     print(x, y)
+# turtle.onscreenclick(get_mouse_click_coor)
+# turtle.mainloop()
+
+
+t = turtle.Pen()
+turtle.speed(6)
+wn = turtle.Screen()
+wn.bgcolor('black')
+# Sun
+turtle.up()
+turtle.goto(-300, 50)
+turtle.down()
+turtle.color('gold')
+turtle.begin_fill()
+turtle.circle(250)
+turtle.end_fill()
+# Mercury
+turtle.up()
+turtle.goto(-200, 0)
+turtle.color('slategray')
+turtle.down()
+turtle.begin_fill()
+turtle.circle(15)
+turtle.end_fill()
+# Venus
+turtle.up()
+turtle.goto(-100, 10)
+turtle.begin_fill()
+turtle.color('tan')
+turtle.circle(35)
+turtle.end_fill()
+# Earth
+turtle.goto(0, 50)
+turtle.color('cornflowerblue')
+turtle.begin_fill()
+turtle.circle(40)
+turtle.end_fill()
+# Moon
+turtle.goto(60, 80)
+turtle.color('lightgray')
+turtle.begin_fill()
+turtle.circle(10)
+turtle.end_fill()
+# Mars
+turtle.goto(-70, -70)
+turtle.color('orangered')
+turtle.begin_fill()
+turtle.circle(25)
+turtle.end_fill()
+# Phobos
+turtle.goto(-50, -20)
+turtle.dot(5, '#783206')
+# Deimos
+turtle.goto(-100, -70)
+turtle.dot(6, '#d5eef0')
+# Jupiter
+turtle.goto(-290, -218)
+turtle.color('burlywood')
+turtle.begin_fill()
+turtle.circle(80)
+turtle.end_fill()
+# Ganymede
+turtle.goto(-320, -160)
+turtle.color('#A4A4A4')
+turtle.begin_fill()
+turtle.circle(20)
+turtle.end_fill()
+# Io
+turtle.goto(-380, -150)
+turtle.color('#FFFF00')
+turtle.begin_fill()
+turtle.circle(10)
+turtle.end_fill()
+# Europa
+turtle.goto(-200, -150)
+turtle.begin_fill()
+turtle.color('lemonchiffon')
+turtle.begin_fill()
+turtle.circle(8)
+turtle.end_fill()
+# Callisto
+turtle.goto(-260, -155)
+turtle.begin_fill()
+turtle.color('mediumblue')
+turtle.circle(15)
+turtle.end_fill()
+# Saturn circle 1
+turtle.pensize(10)
+turtle.goto(230, 150)
+turtle.down()
+turtle.color('mediumturquoise')
+turtle.circle(150)
+turtle.up()
+# Saturn circle 2
+turtle.goto(230,160)
+turtle.color('mediumblue')
+turtle.down()
+turtle.circle(140)
+turtle.up()
+# Saturn circle 3
+turtle.goto(230, 170)
+turtle.color('paleturquoise')
+turtle.down()
+turtle.circle(130)
+# Saturn
+turtle.up()
+turtle.goto(230, 230)
+turtle.begin_fill()
+turtle.color('goldenrod')
+turtle.circle(70)
+turtle.end_fill()
+# Titan
+turtle.up()
+turtle.goto(430, 280)
+turtle.begin_fill()
+turtle.color('#e1e810')
+turtle.circle(20)
+turtle.end_fill()
+#Uranus
+turtle.up()
+turtle.goto(-6, -217)
+turtle.begin_fill()
+turtle.color('#2ECCFA')
+turtle.circle(60)
+turtle.end_fill()
+# Neptune
+turtle.goto(277, -41)
+turtle.begin_fill()
+turtle.color('#8258FA')
+turtle.circle(60)
+turtle.end_fill()
+
+def get_mouse_click_coor(x, y):
+    print(x, y)
+turtle.onscreenclick(get_mouse_click_coor)
+turtle.mainloop()
+turtle.done()
