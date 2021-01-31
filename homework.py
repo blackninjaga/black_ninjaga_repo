@@ -7,6 +7,10 @@ def draw_orbit(orbit):
     t.circle(orbit)
     t.up()
 
+solar_system = [30,4.87,12.10,12.72,6.77 ,139.82, 116.46, 50.72, 49.24]
+solar_system_distance = [0, 20, 36, 50, 76, 260, 475, 600, 750, 0]
+solar_system_colors = ['#ffcc00','#8585ad', '#ff6600', '#6699ff', '#804000', '#ff9933', '#ff9966', '#1a53ff',
+                       '#1a53ff']
 
 Sun = 30
 Mercury = 4.87
@@ -29,12 +33,13 @@ Uranus_color = "#ff8000"
 Neptune_color = "#1a53ff"
 
 t = turtle.Pen()
+t.speed(0)
 turtle.Screen().bgcolor("black")
 
 Sun_orb = 0
 Mercury_orb = 20
 Venus_orb = 36
-Earth_orb = 56
+Earth_orb = 50
 Mars_orb = 76
 Jupiter_orb = 260
 Saturn_orb = 475
@@ -52,5 +57,10 @@ draw_orbit(Saturn_orb)
 draw_orbit(Uranus_orb)
 draw_orbit(Neptune_orb)
 
-t.pencolor("#ffcc00")
-t.dot()
+for x in range(9):
+    t.up
+    t.goto(solar_system_distance[x], 0)
+    t.dot(solar_system[x], solar_system_colors[x])
+    t.down
+
+turtle.mainloop()
